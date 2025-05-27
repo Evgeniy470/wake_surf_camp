@@ -1,5 +1,49 @@
 # Changelog
 
+## [2.3.2](https://github.com/Evgeniy470/wake_surf_camp/compare/v2.5.4...v2.3.2) (2025-05-27)
+
+
+### Features
+
+* Add connection timeout + misc improvements ([#440](https://github.com/Evgeniy470/wake_surf_camp/issues/440)) ([bcdb79d](https://github.com/Evgeniy470/wake_surf_camp/commit/bcdb79df41e76c5c1e4fea6388d0eeb3f0c009f6))
+* Add Python 3.12 support ([75294b2](https://github.com/Evgeniy470/wake_surf_camp/commit/75294b227f5c428436215abaf6cddc9f3d10f4de))
+* Centralizes project metadata and config into a single `pyproject.toml` ([25d3c1c](https://github.com/Evgeniy470/wake_surf_camp/commit/25d3c1c9ee16da81d1b766b9ee6649831a8a1719))
+* Deprecate Python 3.7 support ([75294b2](https://github.com/Evgeniy470/wake_surf_camp/commit/75294b227f5c428436215abaf6cddc9f3d10f4de))
+* Drops support for Python 2.7 (long overdue), Python 3.6 (end-of-life) ([25d3c1c](https://github.com/Evgeniy470/wake_surf_camp/commit/25d3c1c9ee16da81d1b766b9ee6649831a8a1719))
+* Modernize package config and build/release workflow ([25d3c1c](https://github.com/Evgeniy470/wake_surf_camp/commit/25d3c1c9ee16da81d1b766b9ee6649831a8a1719))
+* Simplify language generator ([5dbdf10](https://github.com/Evgeniy470/wake_surf_camp/commit/5dbdf105b9ca4639577d8904001581434741fe34))
+
+
+### Bug Fixes
+
+* Add error case for when a custom tld gives a 404 ([5a860ed](https://github.com/Evgeniy470/wake_surf_camp/commit/5a860edd27a6772d7facc384927e3b87439e2ccd))
+* **cli:** Add deprecated language fallback support to CLI ([5a860ed](https://github.com/Evgeniy470/wake_surf_camp/commit/5a860edd27a6772d7facc384927e3b87439e2ccd))
+* Flush file after saving ([#448](https://github.com/Evgeniy470/wake_surf_camp/issues/448)) ([262c532](https://github.com/Evgeniy470/wake_surf_camp/commit/262c5328981454ebeac07ed0e6f053b0e4e1daa7))
+* Include missing required `*.txt` test files in dist ([#395](https://github.com/Evgeniy470/wake_surf_camp/issues/395)) ([63f10ff](https://github.com/Evgeniy470/wake_surf_camp/commit/63f10ff6aec877103c3459fc6d3c261d469b6770))
+* **langs:** Language added: `fr-CA` (French (Canada)) ([defc400](https://github.com/Evgeniy470/wake_surf_camp/commit/defc4000304f5745b1dfec40ef76eb584fb4a058))
+* **langs:** Language added: `fr-CA` (French (Canada)) ([#490](https://github.com/Evgeniy470/wake_surf_camp/issues/490)) ([defc400](https://github.com/Evgeniy470/wake_surf_camp/commit/defc4000304f5745b1dfec40ef76eb584fb4a058))
+* **langs:** Languages added: `am` (Amharic), `cy` (Welsh), `eu` (Basque), `gl` (Galician), `ha` (Hausa), `lt` (Lithuanian), `pa` (Punjabi) ([#477](https://github.com/Evgeniy470/wake_surf_camp/issues/477)) ([b04d6d1](https://github.com/Evgeniy470/wake_surf_camp/commit/b04d6d1ccfdd5dbb468ddd680e7d63435e3dea2c))
+* **langs:** Languages added: `pt-PT` (Portuguese (Portugal)), `yue` (Cantonese); languages modified: `pa` (Punjabi (Gurmukhi)), `pt` (Portuguese (Brazil)) ([72a7e57](https://github.com/Evgeniy470/wake_surf_camp/commit/72a7e57c0bfa2a6f1f81fc4ce485d9f920ae845c))
+* **langs:** Upstream brought back 'fr-CA' (even though it sounds the same as 'fr') so removing it from the DeprecationWarning ([b8d1b3e](https://github.com/Evgeniy470/wake_surf_camp/commit/b8d1b3e3fe1339058d1a8de3a75a0b86e4d39c64))
+* Languages added: `zh-CN` (Chinese (Simplified)), `zh-TW` (Chinese (Traditional)) ([5dbdf10](https://github.com/Evgeniy470/wake_surf_camp/commit/5dbdf105b9ca4639577d8904001581434741fe34))
+* Languages removed: `cy` (Welsh),  `eo` (Esperanto), `mk` (Macedonian), `ms` (Malay), `zh-CN` (Chinese) ([5dbdf10](https://github.com/Evgeniy470/wake_surf_camp/commit/5dbdf105b9ca4639577d8904001581434741fe34))
+* Loosen dependancies for `click` and `requests`, removes `six` dependancy ([#394](https://github.com/Evgeniy470/wake_surf_camp/issues/394)) ([a4ce0c9](https://github.com/Evgeniy470/wake_surf_camp/commit/a4ce0c9a26778c079fd49c7e2d89ab03bbc22cc3))
+* **test:** Missing `[@pytest](https://github.com/pytest).mark.net` on net-enabled test ([#391](https://github.com/Evgeniy470/wake_surf_camp/issues/391)) ([3667f06](https://github.com/Evgeniy470/wake_surf_camp/commit/3667f06d16152961df2ff8067384f11be9b327c0))
+* **test:** Remove `mock` package test dependancy ([#390](https://github.com/Evgeniy470/wake_surf_camp/issues/390)) ([9b54fc1](https://github.com/Evgeniy470/wake_surf_camp/commit/9b54fc12b7839d3ab3ee0e948df45dfd840061c5))
+
+
+### Documentation
+
+* **cli:** Use correct lang code and valid tld ([5a860ed](https://github.com/Evgeniy470/wake_surf_camp/commit/5a860edd27a6772d7facc384927e3b87439e2ccd))
+* Examples, notes, format, grammar ([1a446b1](https://github.com/Evgeniy470/wake_surf_camp/commit/1a446b11ec69c4cbcac741edc67dabf012a47cee))
+* Format, fixes ([920a281](https://github.com/Evgeniy470/wake_surf_camp/commit/920a281a41ada0d81676c888327e104d846febf0))
+* Replaced the link the old one was broken ([#508](https://github.com/Evgeniy470/wake_surf_camp/issues/508)) ([25271b2](https://github.com/Evgeniy470/wake_surf_camp/commit/25271b29bea0d42745dca95f237313f3bf3eb5cb))
+
+
+### Miscellaneous Chores
+
+* Release 2.3.2 ([6880829](https://github.com/Evgeniy470/wake_surf_camp/commit/688082934d88dd1bd0b648206a4ea34c8dea9ae1))
+
 ## [2.5.4](https://github.com/pndurette/gTTS/compare/v2.5.3...v2.5.4) (2024-11-10)
 
 
